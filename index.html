@@ -1,190 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Haris Khan - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haris Khan | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Haris Khan, a Computer Science student focused on algorithms, software development, and AI concepts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Haris Khan
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          hariskhan@gmail.com
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#top">HK</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +923456790
+        <a class="button button-small" href="https://github.com/haris-work" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
 
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendations</a>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Hi, I'm Haris Khan.</h1>
+            <p class="lead">
+              I’m driven by curiosity and a genuine fascination with computer science. I enjoy exploring how technology works, learning new concepts, and turning ideas into things I can build. There’s always something new to discover, and that’s what keeps me excited to learn.
 
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="html_finalprojimages/profile_har.png" class="profile_image"/>
-      </div>
-
-      <div>
-          <h1>
-            Hi, I'm Haris Khan! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I am emerging software enthusiast who has goals to achieve big and have an impact on the people and the problems present in the world through my work. I have done variety of certifications in fundamentals but I am looking forward to learn more and more and do not stop.
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <!-- Add more skills here -->
-
-        <div class="skill">
-            <img src="html_finalprojimages/python_har.png"/>
-            <h6>Python</h6>
-            <p>4 years of experience</p>
-        </div>
-
-        <div class="skill">
-            <img src="html_finalprojimages/java_har.png"/>
-            <h6>Java</h6>
-            <p>2 years of experience</p>
-        </div>
-
-        <div class="skill">
-            <img src="html_finalprojimages/sql_har.png"/>
-            <h6>SQL</h6>
-            <p>2.5 years of experience</p>
-        </div>
-
-        <div class="skill">
-            <img src="html_finalprojimages/react_har.png"/>
-            <h6>React</h6>
-            <p>0.5 years of experience</p>
-        </div>
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Android App</h3>
-            <ul>
-              <li>Developed an android application on Android Studio, where I used XML for frontend desing and Java/Kotlin for backend.</li>
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="https://github.com/haris-work" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <ul class="hero-list">
+              <li>Algorithms & Data Structures</li>
+              <li>AI & NLP</li>
+              <li>Web Development</li>
             </ul>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Customer Support</h3>
-            <ul>
-              <li>Developed an application service for a small business by incorporting agentic customer support bot for helping answering customer queries.</li>
-            </ul>
+
+          <div class="hero-card">
+            <img src="profile_har.png" alt="Portrait of Haris Khan" />
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Budget planner</h3>
-            <ul>
-              <li>Made a budget planner application for a small business incorporating multiple technologies including large language models and analytics.</li>
-            </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container split-layout">
+          <div>
+            <p class="section-label">About</p>
           </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Haris on responsive web interfaces was a great experience.
-          He quickly understood complex frontend requirements and paid close attention
-          to details like component structure, accessibility, and cross-browser behavior.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Haris is someone I could rely on throughout our web development projects.
-          He has a strong understanding of modern frontend development and consistently
-          turned design requirements into clean, practical interfaces.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I had the opportunity to work with Haris on a web project involving
-          responsive layouts and interactive UI components. He was committed,
-          curious, and quick to understand both the technical requirements and the user experience behind them.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          <div>
+            <p>
+              I’m a Computer Science student with a growing interest in algorithms, software development,
+              machine learning, and natural language processing. My work so far has mostly centered on
+              building small projects that help me understand core computer science ideas in a practical way.
+            </p>
+            <p>
+              I enjoy solving problems by writing code and learning through projects. I like working with
+              data structures, probability-based models, and real implementations where theory turns into
+              something that actually runs.
+            </p>
           </div>
-        </fieldset>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-          
-      </a>
-    </div>
+      <section id="skills" class="section alt-section">
+        <div class="container">
+          <p class="section-label">Skills</p>
+          <h2>Technologies and concepts I’m working with.</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Core CS</h3>
+              <ul>
+                <li>Algorithms</li>
+                <li>Data Structures</li>
+                <li>Greedy Algorithms</li>
+                <li>Binary Trees</li>
+                <li>Priority Queues</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>AI / NLP</h3>
+              <ul>
+                <li>N-grams</li>
+                <li>Tokenization</li>
+                <li>Conditional Probabilities</li>
+                <li>Context Windows</li>
+                <li>Text Prediction</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Programming</h3>
+              <ul>
+                <li>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Web & Tools</h3>
+              <ul>
+                <li>Frontend Development</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+                <li>Software Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3><!-- Add appropriate text here-->Recommendation has been added</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-label">Projects</p>
+          <h2>Technical work I’ve built and learned from.</h2>
+
+          <div class="project-grid">
+            <article class="project-card feature-card">
+              <div class="project-tag">C / Algorithms</div>
+              <h3>Huffman Coding Implementation</h3>
+              <p>
+                I built an implementation of the Huffman coding algorithm in C during my early studies.
+                The project focused on constructing Huffman trees, working with frequencies, and implementing
+                the priority queue and tree operations needed for encoding and decoding.
+              </p>
+              <ul>
+                <li>Binary trees and node-based data structures</li>
+                <li>Greedy algorithm design</li>
+                <li>Min-heap / priority queue logic</li>
+                <li>Frequency analysis and bit-level encoding</li>
+                <li>Memory handling and pointer-based C implementation</li>
+              </ul>
+            </article>
+
+            <article class="project-card feature-card">
+              <div class="project-tag">C++ / NLP</div>
+              <h3>Mini Language Model (N-gram Approach)</h3>
+              <p>
+                I built a small statistical language model using N-grams to model word relationships and predict
+                the next token from the previous context. The project focused on frequency counts, probability,
+                token sequences, and basic text-generation behavior without using a neural-network architecture.
+              </p>
+              <ul>
+                <li>N-grams and context windows</li>
+                <li>Tokenization and text preprocessing</li>
+                <li>Frequency-based language modeling</li>
+                <li>Conditional probability estimation</li>
+                <li>Text prediction and basic generation</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-tag">Web Development</div>
+              <h3>Unit Conversion Webpage</h3>
+              <p>
+                This project is a single-page unit conversion website that converts metric values into customary
+                units. It is one of the clearer examples of my frontend development work on GitHub.
+              </p>
+              <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>User input and calculation logic</li>
+                <li>Simple responsive frontend design</li>
+              </ul>
+              <a href="https://github.com/haris-work/Unit-Conversion-My-First-Webpage" target="_blank" rel="noreferrer">View repository</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-tag">Portfolio</div>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                I created this portfolio to present my work, learning journey, and technical interests in a clean,
+                professional format. It reflects the projects, skills, and direction I’m building toward.
+              </p>
+              <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Responsive single-page structure</li>
+                <li>Project and profile presentation</li>
+              </ul>
+              <a href="https://github.com/haris-work/my-portfolio" target="_blank" rel="noreferrer">View repository</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="container">
+          <p class="section-label">Certificates</p>
+          <h2>Coursework and certificates I’ve completed.</h2>
+          <div class="cert-grid">
+            <div class="cert-card highlight">
+              <span class="cert-badge">Certificate</span>
+              <div class="cert-image-wrap">
+                <img src="certs/android ehunar certificate.png" alt="Android App Development certificate" />
+              </div>
+              <h3>Android App Development</h3>
+              <p>Certificate of completion for a six-month Android app development program.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera 2JQR697UKBWE-1.png" alt="Getting Started with Git and GitHub certificate" />
+              </div>
+              <h3>Getting Started with Git and GitHub</h3>
+              <p>IBM / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera ADQ5TEDD5BE0-1.png" alt="Introduction to Software Engineering certificate" />
+              </div>
+              <h3>Introduction to Software Engineering</h3>
+              <p>IBM / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera BYWW2GH0WW6Y-1.png" alt="Introduction to HTML, CSS, and JavaScript certificate" />
+              </div>
+              <h3>Introduction to HTML, CSS, & JavaScript</h3>
+              <p>IBM / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera DXW0DQW0CIX9-1.png" alt="Introduction to Cloud Computing certificate" />
+              </div>
+              <h3>Introduction to Cloud Computing</h3>
+              <p>IBM / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera FE7QF1MBNI73-1.png" alt="Deep Learning AI certificate" />
+              </div>
+              <h3>Neural Networks and Deep Learning</h3>
+              <p>DeepLearning.AI / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera J6PP5Q57AJ8E-1.png" alt="Advanced Learning Algorithms certificate" />
+              </div>
+              <h3>Advanced Learning Algorithms</h3>
+              <p>DeepLearning.AI / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera JF4KANVW5D8S-1.png" alt="Unsupervised Learning, Recommenders, and Reinforcement Learning certificate" />
+              </div>
+              <h3>Unsupervised Learning, Recommenders, & Reinforcement Learning</h3>
+              <p>DeepLearning.AI / Stanford Online / Coursera certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera NF7UT3B0MVSN-1.png" alt="Machine Learning certificate" />
+              </div>
+              <h3>Machine Learning</h3>
+              <p>DeepLearning.AI / Stanford Online / Coursera specialization certificate.</p>
+            </div>
+            <div class="cert-card">
+              <span class="cert-badge">Coursera</span>
+              <div class="cert-image-wrap">
+                <img src="certs/Coursera UPWTZX5BHX5B-1.png" alt="Machine Learning certificate" />
+              </div>
+              <h3>Machine Learning</h3>
+              <p>DeepLearning.AI / Stanford Online / Coursera.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Email</h2>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:hariskhanzadapms310@gmail.com">hariskhanzadapms310@gmail.com</a>
+            <a class="button button-small" href="https://github.com/haris-work" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
